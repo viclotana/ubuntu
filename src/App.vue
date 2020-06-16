@@ -135,9 +135,11 @@
           </div>
     </b-container>
     <div class="footer">
+      <p>Built with &#10084;&#65039; by 
+        <a href="http://twitter.com/viclotana">Lotanna</a> and 
+        <a href="http://twitter.com/PrimroseKatena">Primrose</a></p>
       <p>Ubuntu App &copy; 2020</p>
     </div>
-  </div>
 </template>
 
 <script>
