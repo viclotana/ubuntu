@@ -185,7 +185,6 @@
                             <b-form-input
                               id="input-2"
                               v-model="form.refer"
-                              description="bla"
                               placeholder="Enter code of the person here"
                             ></b-form-input>
                           </b-form-group>
