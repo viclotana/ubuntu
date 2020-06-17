@@ -10,7 +10,7 @@
 
         <b-collapse id="nav-text-collapse" is-nav>
           <b-navbar-nav >
-            <b-nav-text class="ml-5" tabs align="right" >Login</b-nav-text>
+            <b-nav-text class="ml-5" tabs align="right" v-b-modal.modal-3>Login</b-nav-text>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -72,7 +72,7 @@
                   <b-list-group-item></b-list-group-item>
                 </b-list-group>
                 <br>
-                <b-button href="#" variant="secondary">Get Referral Code</b-button> <br>
+                <b-button v-b-modal.modal-2 variant="secondary">Get Referral Code</b-button> <br>
               </b-card>
               <!-- card 2 -->
               <b-card border-variant="info" header="Basic" header-bg-variant="info"
@@ -100,7 +100,7 @@
                   </b-list-group-item>
                   <b-list-group-item></b-list-group-item>
                 </b-list-group> <br>
-                <b-button href="#" variant="info">Subscribe</b-button> <br>
+                <b-button v-b-modal.modal-1 variant="info">Subscribe</b-button> <br>
               </b-card>
               <!-- card 3 -->
               <b-card border-variant="default" header="Premium" header-bg-variant="secondary"
@@ -129,7 +129,7 @@
                   <b-list-group-item></b-list-group-item>
                 </b-list-group>
                 <br>
-                <b-button href="#" variant="secondary">Subscribe</b-button>
+                  <b-button v-b-modal.modal-1 variant="secondary">Subscribe</b-button>
               </b-card>
             </b-card-group>
           </div>
@@ -140,13 +140,194 @@
         <a href="http://twitter.com/PrimroseKatena">Primrose</a></p>
       <p>Ubuntu App &copy; 2020</p>
     </div>
+    <!-- Modals Start-->
+                  <div>
+                  <!-- Modal 1 for basic and premium -->
+                  <b-modal id="modal-1" title="Subscribing for an Ubuntu Plan" hide-footer>
+                      <div>
+                        <b-form @submit="onSubmit"  v-if="show">
+                          <b-form-group
+                            id="input-group-1"
+                            label="Email address:"
+                            label-for="input-1"
+                            description="We'll never share your email with anyone else."
+                          >
+                            <b-form-input
+                              id="input-1"
+                              v-model="form.email"
+                              type="email"
+                              required
+                              placeholder="Enter Apple ID email"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+                            <b-form-input
+                              id="input-2"
+                              v-model="form.name"
+                              required
+                              placeholder="Enter name"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-2" label="Choose a Password:" label-for="text-password">
+                            <b-form-input
+                              type="password"
+                              v-model="form.password"
+                              aria-describedby="password-help-block"
+                              required
+                              placeholder="Enter new password"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-2" label="Who Referred you?" label-for="input-2"
+                            description="You can leave this blank if no one referred you">
+                            <b-form-input
+                              id="input-2"
+                              v-model="form.refer"
+                              description="bla"
+                              placeholder="Enter code of the person here"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-3" label="Plan:" label-for="input-3">
+                            <b-form-select
+                              id="input-3"
+                              v-model="form.plan"
+                              :options="plans"
+                              required
+                            ></b-form-select>
+                          </b-form-group>
+                          <b-button type="submit" variant="primary"
+                          v-b-modal.modal-6 @click="$bvModal.hide('modal-1')">Proceed to pay</b-button>
+                        </b-form>
+                      </div>
+                  </b-modal>
+                  <!-- Modal 2 - getting referal code -->
+                  <b-modal id="modal-2" title="Getting a Referral Code" hide-footer>
+                      <div>
+                        <b-form @submit="onSubmit"  v-if="show">
+                          <b-form-group
+                            id="input-group-1"
+                            label="Email address:"
+                            label-for="input-1"
+                            description="We'll never share your email with anyone else."
+                          >
+                            <b-form-input
+                              id="input-1"
+                              v-model="form.email"
+                              type="email"
+                              required
+                              placeholder="Enter Apple ID email"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+                            <b-form-input
+                              id="input-2"
+                              v-model="form.name"
+                              required
+                              placeholder="Enter name"
+                            ></b-form-input>
+                          </b-form-group>
+                          <b-button type="submit" 
+                            v-b-modal.modal-5 @click="$bvModal.hide('modal-2')" variant="primary">Get Referral Code</b-button>
+                        </b-form>
+                      </div>
+                  </b-modal>
+                   <!-- Modal 3 - Login button -->
+                  <b-modal id="modal-3" title="Login" hide-footer>
+                      <div>
+                        <b-form   v-if="show">
+                          <b-form-group
+                            id="input-group-1"
+                            label="Email address:"
+                            label-for="input-1"
+                          >
+                            <b-form-input
+                              id="input-1"
+                              v-model="form.email"
+                              type="email"
+                              required
+                              placeholder="Enter Apple ID email"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-2" label="Enter Password:" label-for="text-password">
+                            <b-form-input
+                              type="password"
+                              v-model="form.password"
+                              aria-describedby="password-help-block"
+                              required
+                              placeholder="Enter your password"
+                            ></b-form-input>
+                          </b-form-group>
+                          <b-button v-b-modal.modal-4 variant="primary" 
+                            @click="$bvModal.hide('modal-3')">Login</b-button>
+                        </b-form>
+                      </div>
+                  </b-modal>
+                  <!-- Modal 4 display your details -->
+                  <b-modal id="modal-4" title="Your Ubuntu Details" hide-footer> 
+                  <b-list-group>
+                    <b-list-group-item>Full Name: John Doe</b-list-group-item>
+                    <b-list-group-item>Email: johndoe@icloud.com</b-list-group-item>
+                    <b-list-group-item>Apple ID: johndoe@icloud.com</b-list-group-item>
+                    <b-list-group-item>Current Plan: Ubuntu Premium Plan</b-list-group-item>
+                    <b-list-group-item>Netflix Username: JOHNdoe</b-list-group-item>
+                    <b-list-group-item>Netflix Password: 1234567</b-list-group-item>
+                    <b-list-group-item>Date of Subscription: January 1, 2020</b-list-group-item>
+                    <b-list-group-item>Date of Expiry: January 1, 2021</b-list-group-item>
+                  </b-list-group>
+                  </b-modal>
+                  <!-- modal 5 to display referal code -->
+                   <b-modal id="modal-5" title="Your Referral Code" hide-footer>
+                      <div>
+                        <b-form @submit="onSubmit"  v-if="show">
+                          <h1>001</h1>
+                        </b-form>
+                      </div>
+                  </b-modal>
+                  <!-- modal 6 to display payment instructions -->
+                   <b-modal id="modal-6" title="How to Make Payment" hide-footer>
+                      <div>
+                        <b-form v-if="show">
+                          <h5>Send 240,000 Naira ($600 equivalent) to
+                            xxxxxxxx Access Bank Nwose Lotanna Victor and 
+                            you will be notified in 24 hours of reciept of funds
+                          </h5>
+                        </b-form>
+                      </div>
+                  </b-modal>
+                </div>
+  <!-- Modals end -->
+  </div>
 </template>
 
 <script>
 
 export default {
   name: 'app',
-  components:{}
+  components:{},
+  data() {
+      return {
+        form: {
+          email: '',
+          name: '',
+          password: '',
+          refer: '',
+          plan: null
+        },
+        plans: [{ text: 'Select One', value: null }, '1 year Basic plan ($48)', '1 year Premium plan ($600)'],
+        show: true
+      }
+    },
+    methods: {
+      onSubmit(evt) {
+        evt.preventDefault()
+        alert(JSON.stringify(this.form))
+      }
+    }
 }
 </script>
 
