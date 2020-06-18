@@ -1,24 +1,30 @@
-# ubuntu
+FAMILIA/UBUNTU
 
-## Project setup
-```
-npm install
-```
+A platform that allows you to save large sums of money and enjoy the best package of music and movies from Apple Music, Spotify, Netflix and Amazon Prime.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Feature List:
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. Authentication
+  - Sign up
+  - Sign In
+ 
+2. Choose Package
+  - Join using a Referal Code 
+  - Join other subscriptions
+  
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Technology used:
+1. Bootstrap
+2. Mongodb
+3. Nodejs
+
+Team:
+1. Lotanna Nwose @viclotana
+2. Primerose Katena @primruv
+
+  
+
+
+
+
