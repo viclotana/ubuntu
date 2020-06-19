@@ -148,7 +148,7 @@
     <!-- Modals Start-->
                   <div>
                   <!-- Modal 1 for basic and premium -->
-                  <b-modal id="modal-1" title="Subscribing for an Familia Plan" hide-footer>
+                  <b-modal id="modal-1" title="Subscribing for a Familia Plan" hide-footer>
                       <div>
                         <b-form @submit="onSubmit"  v-if="show">
                           <b-form-group
@@ -375,7 +375,7 @@ export default {
           refer: '',
           plan: null
         },
-        plans: [{ text: 'Select One', value: null }, '1 year Basic plan ($48)', '1 year Premium plan ($600)'],
+        plans: [{ text: 'Select One', value: null }, '1 year Basic plan ($108)', '1 year Premium plan ($168)'],
         show: true
       }
     },
