@@ -143,12 +143,12 @@
       <p>Built with &#10084;&#65039; by 
         <a href="http://twitter.com/viclotana">Lotanna</a> and 
         <a href="http://twitter.com/PrimroseKatena">Primrose</a></p>
-      <p>Ubuntu App &copy; 2020</p>
+      <p>Familia App &copy; 2020</p>
     </div>
     <!-- Modals Start-->
                   <div>
                   <!-- Modal 1 for basic and premium -->
-                  <b-modal id="modal-1" title="Subscribing for an Ubuntu Plan" hide-footer>
+                  <b-modal id="modal-1" title="Subscribing for an Familia Plan" hide-footer>
                       <div>
                         <b-form @submit="onSubmit"  v-if="show">
                           <b-form-group
@@ -301,12 +301,12 @@
                       </div>
                   </b-modal>
                   <!-- Modal 4 display your details -->
-                  <b-modal id="modal-4" title="Your Ubuntu Details" hide-footer> 
+                  <b-modal id="modal-4" title="Your Familia Details" hide-footer> 
                   <b-list-group>
                     <b-list-group-item>Full Name: John Doe</b-list-group-item>
                     <b-list-group-item>Email: johndoe@icloud.com</b-list-group-item>
                     <b-list-group-item>Apple ID: johndoe@icloud.com</b-list-group-item>
-                    <b-list-group-item>Current Plan: Ubuntu Premium Plan</b-list-group-item>
+                    <b-list-group-item>Current Plan: Familia Premium Plan</b-list-group-item>
                     <b-list-group-item>Netflix Username: JOHNdoe</b-list-group-item>
                     <b-list-group-item>Netflix Password: 1234567</b-list-group-item>
                     <b-list-group-item>Date of Subscription: January 1, 2020</b-list-group-item>
