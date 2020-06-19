@@ -6,7 +6,7 @@
 
         <b-navbar-brand class="ml-0">
           <b-icon-music-player-fill class="h5 mr-0 mb-0 mt-0" style="color: #17a2b8;"></b-icon-music-player-fill>
-          Ubuntu</b-navbar-brand>
+          Familia</b-navbar-brand>
 
         <b-collapse id="nav-text-collapse" is-nav>
           <b-navbar-nav >
@@ -26,16 +26,16 @@
         class="mt-4 mb-5"
       >
         <b-carousel-slide
-          caption="Get Apple Music and Netflix for the price of one"
-          img-src="./assets/img4.jpg"
+          caption="Get Apple Music and Netflix for the price of Netflix"
+          img-src="./assets/image43.jpg"
+        ></b-carousel-slide>
+        <b-carousel-slide
+          caption="Never worry about monthly billings again"
+          img-src="./assets/image49.jpg" 
         ></b-carousel-slide>
         <b-carousel-slide
           caption="Get Apple Music for free by inviting your friends"
-          img-src="./assets/img2.jpg"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          caption="You never have to worry about monthly billings again"
-          img-src="./assets/img8.jpg"
+          img-src="./assets/image36.jpg"
         ></b-carousel-slide>
       </b-carousel>
       </b-container>
@@ -50,7 +50,7 @@
                 header-text-variant="white" align="center" title="$0/month"
                 tag="article" style="max-width: auto;" class="mb-5 mt-2"> <br>
                 <b-card-text>Get a free Apple Music subscription for 1 year by 
-                  getting 3 of your friends to subcribe for basic or premium  </b-card-text>
+                  getting 3 of your friends to subcribe to basic or premium  </b-card-text>
                <b-list-group flush>
                   <b-list-group-item></b-list-group-item>
                   <b-list-group-item>
@@ -76,7 +76,7 @@
               </b-card>
               <!-- card 2 -->
               <b-card border-variant="info" header="Basic" header-bg-variant="info"
-                header-text-variant="white" align="center" title="$4/month"
+                header-text-variant="white" align="center" title="$9/month"
                 tag="article" style="max-width: auto;" class="mb-5 mt-2"> <br>
                 <b-card-text>Get a 1 year subscription to both
                    Apple Music & Netflix. This is billed once for the year</b-card-text>
@@ -104,7 +104,7 @@
               </b-card>
               <!-- card 3 -->
               <b-card border-variant="default" header="Premium" header-bg-variant="secondary"
-                header-text-variant="white" align="center" title="$50/month"
+                header-text-variant="white" align="center" title="$14/month"
                 tag="article" style="max-width: auto;" class="mb-5 mt-2"> <br>
                 <b-card-text>Get a 1 year subscription to
                    Apple Music, Netflix and Spotify. This is billed once for the year</b-card-text>
