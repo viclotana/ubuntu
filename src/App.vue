@@ -325,7 +325,7 @@
                    <b-modal id="modal-6" title="How to Make Payment" hide-footer>
                       <div>
                         <b-form v-if="show">
-                          <h5>Send 240,000 Naira ($600 equivalent) to
+                          <h5>Send 43,200 Naira ($108 equivalent) to
                             xxxxxxxx Access Bank Nwose Lotanna Victor and 
                             you will be notified in 24 hours of reciept of funds
                           </h5>
