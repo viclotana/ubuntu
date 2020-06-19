@@ -162,7 +162,7 @@
                               v-model="form.email"
                               type="email"
                               required
-                              placeholder="Enter Apple ID email"
+                              placeholder="Enter email"
                             ></b-form-input>
                           </b-form-group>
 
@@ -232,7 +232,7 @@
                               v-model="form.email"
                               type="email"
                               required
-                              placeholder="Enter Apple ID email"
+                              placeholder="Enter email"
                             ></b-form-input>
                           </b-form-group>
 
@@ -282,7 +282,7 @@
                               v-model="form.email"
                               type="email"
                               required
-                              placeholder="Enter Apple ID email"
+                              placeholder="Enter email"
                             ></b-form-input>
                           </b-form-group>
 
