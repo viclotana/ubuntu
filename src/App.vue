@@ -10,7 +10,8 @@
 
         <b-collapse id="nav-text-collapse" is-nav>
           <b-navbar-nav >
-            <b-nav-text class="ml-5" tabs align="right" v-b-modal.modal-3>Login</b-nav-text>
+            <b-nav-text class="aa" tabs align="right" v-b-modal.modal-3>Login</b-nav-text>
+            <b-nav-text class="ml-5" tabs align="right" v-b-modal.modal-7>FAQ</b-nav-text>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -27,7 +28,7 @@
       >
         <b-carousel-slide
           caption="Get Apple Music and Netflix for the price of Netflix"
-          img-src="./assets/image43.jpg"
+          img-src="./assets/image50.jpg"
         ></b-carousel-slide>
         <b-carousel-slide
           caption="Never worry about monthly billings again"
@@ -36,6 +37,10 @@
         <b-carousel-slide
           caption="Get Apple Music for free by inviting your friends"
           img-src="./assets/image36.jpg"
+        ></b-carousel-slide>
+        <b-carousel-slide
+          caption="Enjoy the best of Entertainment on a friendly budget"
+          img-src="./assets/im1.jpg"
         ></b-carousel-slide>
       </b-carousel>
       </b-container>
@@ -327,6 +332,30 @@
                         </b-form>
                       </div>
                   </b-modal>
+                  <!-- Modal 7 FAQ -->
+                  <b-modal id="modal-7" title="Frequently Asked Questions" hide-footer> 
+                  <b-list-group>
+                    <b-list-group-item><h5 style="text-align:center;">
+                      How do I Subscribe?</h5></b-list-group-item>
+                    <b-list-group-item>Choose an Available Plan and click subscribe,
+                      you will see instructions on how to make payments.</b-list-group-item>
+                      <b-list-group-item><h5 style="text-align:center;">
+                      How long does my Subscription last?</h5></b-list-group-item>
+                    <b-list-group-item>Every subscription lasts for one year and that 
+                      is why you are billed for 12 months at once.</b-list-group-item>
+                      <b-list-group-item><h5 style="text-align:center;">
+                      I lost my Apple Music or Netflix Login details</h5></b-list-group-item>
+                    <b-list-group-item>You can get your login details by clicking on Login, 
+                      you will see all your data displayed.</b-list-group-item>
+                      <b-list-group-item><h5 style="text-align:center;">
+                      How does Familia make money?</h5></b-list-group-item>
+                    <b-list-group-item>We charge a little fee to be administrators of the Apple music, 
+                      Netflix and Spotify Family accounts we manage.</b-list-group-item>
+                      <b-list-group-item><h5 style="text-align:center;">
+                      How can I reach you?</h5></b-list-group-item>
+                    <b-list-group-item>The footer of this page has our official Twitter Account.</b-list-group-item>
+                  </b-list-group>
+                  </b-modal>
                 </div>
   <!-- Modals end -->
   </div>
@@ -375,12 +404,12 @@ img,.w-100{
   height: 480px !important;
 }
 @media (min-width: 481px){
-  li{
+  li.aa{
     width: 960px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  li{
+  li.aa{
     width: auto;
   }
 }
