@@ -180,6 +180,16 @@
                             ></b-form-input>
                           </b-form-group>
 
+                          <b-form-group id="input-group-2" label="Confirm Password:" label-for="text-password">
+                            <b-form-input
+                              type="password"
+                              v-model="form.password"
+                              aria-describedby="password-help-block"
+                              required
+                              placeholder="Confirm password"
+                            ></b-form-input>
+                          </b-form-group>
+
                           <b-form-group id="input-group-2" label="Who Referred you?" label-for="input-2"
                             description="You can leave this blank if no one referred you">
                             <b-form-input
@@ -227,6 +237,25 @@
                               v-model="form.name"
                               required
                               placeholder="Enter name"
+                            ></b-form-input>
+                          </b-form-group>
+                           <b-form-group id="input-group-2" label="Choose a Password:" label-for="text-password">
+                            <b-form-input
+                              type="password"
+                              v-model="form.password"
+                              aria-describedby="password-help-block"
+                              required
+                              placeholder="Enter new password"
+                            ></b-form-input>
+                          </b-form-group>
+
+                          <b-form-group id="input-group-2" label="Confirm Password:" label-for="text-password">
+                            <b-form-input
+                              type="password"
+                              v-model="form.password"
+                              aria-describedby="password-help-block"
+                              required
+                              placeholder="Confirm password"
                             ></b-form-input>
                           </b-form-group>
                           <b-button type="submit" 
