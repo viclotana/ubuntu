@@ -9,13 +9,8 @@
         </b-navbar-brand>
 
         <b-collapse id="nav-text-collapse" is-nav>
-<<<<<<< HEAD
-          <b-navbar-nav >
-            <b-nav-text class="aa" tabs align="right" v-b-modal.modal-3>Loginnn</b-nav-text>
-=======
           <b-navbar-nav>
             <b-nav-text class="aa" tabs align="right" v-b-modal.modal-3>Login</b-nav-text>
->>>>>>> 8c8d1978fc8bfea93b6a48743dc1627a1e835186
             <b-nav-text class="ml-5" tabs align="right" v-b-modal.modal-7>FAQ</b-nav-text>
           </b-navbar-nav>
         </b-collapse>
