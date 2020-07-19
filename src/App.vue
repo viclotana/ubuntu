@@ -10,7 +10,7 @@
 
         <b-collapse id="nav-text-collapse" is-nav>
           <b-navbar-nav >
-            <b-nav-text class="aa" tabs align="right" v-b-modal.modal-3>Login</b-nav-text>
+            <b-nav-text class="aa" tabs align="right" v-b-modal.modal-3>Loginnn</b-nav-text>
             <b-nav-text class="ml-5" tabs align="right" v-b-modal.modal-7>FAQ</b-nav-text>
           </b-navbar-nav>
         </b-collapse>
